@@ -1,18 +1,10 @@
+import {setNewColor} from './colors.js';
+
+
+
+
+
 const stopForm = event => event.preventDefault();
-
-
-
-
-
-const setNewColor = event => {
-	console.log('yay');
-	const page = document.querySelector('#page');
-	const target = event.target;
-	const field = target.closest('#controls').querySelector('#backgroundColor');
-	const newColor = field.value;
-	page.style.backgroundColor = newColor;
-	field.value = '';
-};
 
 
 
