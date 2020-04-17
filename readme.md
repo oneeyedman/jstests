@@ -1,4 +1,4 @@
-# Mis primeros tests, chispas!
+# Mis primeros tests, chispas
 
 He hecho una pequeña aplicación que hace dos cosas:
 

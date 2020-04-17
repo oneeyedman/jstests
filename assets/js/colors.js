@@ -3,6 +3,10 @@ const checkHexChar = strColor => {
 	return test ? '#' + strColor : strColor;
 };
 
+
+
+
+
 function isColor(strColor){
 	const s = new Option().style;
 	s.color = strColor;
@@ -19,7 +23,7 @@ const setNewColor = event => {
 	const page = document.querySelector('#page');
 	const target = event.target;
 	const field = target.closest('#controls').querySelector('#backgroundColor');
-	const newColor = field.value;
+	const newColor = checkHexChar(field.value);
 	if (isColor(newColor)) {
 		page.style.backgroundColor = newColor;
 		field.value = '';
@@ -27,5 +31,9 @@ const setNewColor = event => {
 		console.log('no es un color');
 	}
 };
+
+
+
+
 
 export {checkHexChar, isColor, setNewColor};

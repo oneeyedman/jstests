@@ -15,7 +15,7 @@ describe('Color tests', () => {
 	});
 
 	test('Hex color without # returns valid hex code', () => {
-		expect(checkHexChar('ffffff')).toBe('#ffffff');
+		expect(checkHexChar('ffcc00')).toBe('#ffcc00');
 	});
 
 	test('Name color returns same name color', () => {
