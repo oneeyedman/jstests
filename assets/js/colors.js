@@ -1,3 +1,8 @@
+const checkHexChar = strColor => {
+	const test = /^[0-9A-F]{6}$/i.test(strColor);
+	return test ? '#' + strColor : strColor;
+}
+
 function isColor(strColor){
 	const s = new Option().style;
 	s.color = strColor;
@@ -23,4 +28,4 @@ const setNewColor = event => {
 	}
 };
 
-export {setNewColor};
+export {checkHexChar, isColor, setNewColor};

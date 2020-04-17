@@ -1,0 +1,24 @@
+{
+  "name": "jstests",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.html",
+  "scripts": {
+    "test": "jest --watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/oneeyedman/jstests.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/oneeyedman/jstests/issues"
+  },
+  "homepage": "https://github.com/oneeyedman/jstests#readme",
+  "devDependencies": {
+    "jest": "^25.3.0",
+    "babel-core": "^6.26.3",
+    "babel-preset-env": "^1.7.0"
+  }
+}
