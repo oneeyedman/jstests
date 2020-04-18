@@ -12,6 +12,25 @@ body {
 	justify-content: center;
 	position: relative;
 }
+.is-not-a-color {
+	position: relative;
+}
+.is-not-a-color::before {
+	content: '\f714';
+	font-family: 'Font Awesome 5 Pro';
+	font-weight: 900;
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	font-size: 20vh;
+	transform: translate(-50%,-130%);
+	color: rgba(0, 0, 0, .3);
+	transition: opacity ease .3s;
+	opacity: 0;
+}
+.is-not-a-color--active::before {
+	opacity: 1;
+}
 
 
 
